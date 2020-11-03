@@ -1,0 +1,78 @@
+
+body{
+  margin: 0;
+    background-color:ghostwhite;
+
+}
+h1,h2,h3{
+  text-align: center;}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 2;
+}
+a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+hr{
+  margin: 0;
+  padding: 0;
+  border-style: dashed;
+}
+
+.top-container{
+  background-color: ghostwhite;
+  margin-top: 10px;
+}
+
+
+.middle-container{
+  margin: 0;
+  padding: 0;
+}
+
+
+.bottom-container {
+  margin: 0;
+  text-align: center;
+}
+
+.humanloop-img {
+  width: 20%;
+  float: left;
+  margin-right: 10px;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.BUTTON_SNL {
+   background: #3D94F6;
+   color: black;
+   border-radius: 20px;
+   font-family: Open Sans;
+   font-size: 18px;
+   padding: 5px;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+
+.BUTTON_SNL:hover {
+  background: #0B121E;
+  border: solid #99C624 1px;
+  border-radius: 20px;
+  text-decoration: none;
+}

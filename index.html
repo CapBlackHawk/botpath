@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<script>
+function validateform(){
+var name=document.myform.email.value;
+var password=document.myform.pass.value;
+
+if (name==null || name==""){
+  alert("Username can't be blank");
+  return false;
+}
+else if(password.length<5){
+  alert("Password must be at least 5 characters long.");
+  return false;
+}
+else if(name=="admin" && password=="Quess"){
+	 document.write("The password you've is entered is correct.");
+	 document.location.href = "chatbot.html";
+}
+else {
+		alert("Wrong credentials");
+}
+}
+</script>
+
+</head>
+<body>
+
+	<!--===============================================================================================-->
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<img src="images/img-01.png" alt="IMG" width="28%">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-02.png" alt="IMG">
+				</div>
+
+				<form name="myform" method="post">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" onclick="validateform()">
+							Login
+						</button>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
