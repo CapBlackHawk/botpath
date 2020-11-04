@@ -176,6 +176,7 @@ iframe {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
+	position:sticky;
 
   display: -webkit-box;
   display: -webkit-flex;
